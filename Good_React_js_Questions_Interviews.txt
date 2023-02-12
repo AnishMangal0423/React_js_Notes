@@ -1,0 +1,724 @@
+ Chapter-1 --> Inception 
+.........................
+
+Q1. What is Emmit ?
+
+Q2. Why we uses crossorigin in script tag ?
+
+Q3. What is CDN ?
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Chapter-2 --> Igniting Our App
+................................
+
+Q1. What is diffrence between Library and Framework? Is React is a library or framework?
+
+Ans- Yes, React is a library 
+     
+     Library --> 1.Which contains functions and classes that helps the devlopers by simply calling them .
+                 2.Less code so less  time loading
+                 3.Conatins Classes,functions,objects,modules.
+                 
+                 Eg- Jquery,Reactjs
+
+    Framework --> 1.Its is basically a Devlopment Environment,or foundation upon which devlopers makes appliations
+                  2.More code so more time to load
+                  3.Contains API,Compilers,libraries
+                      
+                  Eg- Nodejs,Angularjs  
+
+Q2. What is Create React App in Reactjs ?
+
+Ans- Its is a esay and comfortable environment to learn react and its functionality for begineers,It uses babel 
+     and webpack as bundler
+
+
+*Q3. What is bundlers in Reactjs?
+
+Ans- Used for the optimization of our code, bundles or package of javascript files
+     1.vite
+    *2.Parcel
+     3.Webpack
+
+
+Q4. What is NPM ?
+Ans- It is the software that manages all the javascript packages created by the devlopers in open source
+     Full-Form --> !Node package Mangaer,all  except it.‬
+     Comes after install Node.js
+
+
+Q5. What does command npm init will do ?
+Ans- Will make package.json file 
+      
+
+ 
+Q. What are the different ways to inject React in our codes?
+Ans- There are two famous methods to inject React in codes-
+     1. Using CDN links.
+     2. By importing react,dom from node modules by making script tag as module
+
+
+
+
+Q. Why using import keyword in associated js file via index.html gives error?
+Ans- <script src="App.js"></script>
+     It will be error if we uses import/export in app.js file because according to browser we cannot import normal
+     js files , we have to first make it a module then Browser will understand what is happeninng
+          <script type="module" src="App.js"></script>
+ 
+
+
+
+Q6. What is npx ?
+Ans- node package exceuter ,, Npx is a part of npm and after installation of npm we gots npx by default ,, it
+     basically executes the packages 
+     Eg- npx parcel index.html --> meaning is that hey executer excutes parcel wid entry point as index.html
+                                   Now we have not to work on that ugly url it will create a server of localhost
+
+    * Npm installs and manages the packages while npx executes the packages.
+
+
+Q. What is Hot module Replacement ?
+Ans- Parcel has the capability that it contains file watcher alogrithm written in c++ ,which is very fast so 
+     if there is any changes found then it tells to server to reaload fastly.called HMR.
+
+
+Q. What is the Meaning of folder .parcel-cache?
+Ans- It basically gives the storage to parcel that u can live or store ur files here and contais binary..parcel 
+     saves the recent changes/files in it that saves the time for upcoming changes.
+
+
+Q. What is the meaning of folder "dist"?
+Ans- Dist bscically readies our files to a industry level by minifying,compresses,removing and cleaning all the stuffs and it
+     can be done via command -
+     npx parcel build index.html
+ 
+
+
+Q. write down the functionalities of Parcel Bundler.
+Ans- Parcel as bundler keeps an d gives many superpowers to our react like-
+     
+     1. compression
+     2. Minification
+     3. Cleaning our code
+     4. HMR
+     5. Image Optimization
+     6. Mking Industry for Ready
+     7. Compatable with old version of Browser.
+     8. Manages Port number Also
+     9. Concept of https
+     10. Follows concept of Transative Dependencies.
+
+
+Q. What is gitignore?
+Ans- Anything that is self/server-Generated is kept in gitignore to not upload on git.
+
+* Parcel uses consistent hashing algorithm to store in parcel-cache.
+
+
+
+Q. can Alone react and parcel make getready for companies production app ?
+Ans- NO, we are required the dependecies associated to parcel then thier and then their and so on...Known as Transitive Dependencies.
+     Their is also a dependency tree.
+
+
+Q. Write down all the commands along with their uses in this chapter to create our own APP?
+Ans- 1. npm init --> It basically downloads the npm .. or package.json file.
+     2. npm install -D parcel --> To install parcel in dev dependencies in package.json file.
+     3. npm i react or npm i react-dom --> it basically install react
+     4. npx parcel index.html --> Hii npm executes parcel with entry point of index.htmland create my own server localhost
+     
+
+
+Q. What is Browserlist? Ellobrate it..
+Ans- Basically it contains ki aap apne app ko kis kis version par challana chaate h 
+     For more information..go to browserlist.org
+
+
+
+Q. Difference between Dependency and Devdependency ?
+Ans- Dependency -> contains packages that are useful for Production 
+     Dev Dependency --> Packages used in localhost environment
+           -- present in json files
+
+
+Q. What is difference between Package.json and Package-lock.json?
+Ans-
+
+
+Q. Why should I not modify `package-lock.json`?
+Ans-
+
+
+Q.What is Caret and Tilda?
+Ans-
+
+
+Q.Expalin about types of scripts in html?
+Ans-
+
+
+Q. Why we are using Parcel over Webpack?
+Ans-
+
+
+Q.What is Tree-Shaking?
+----------------------------------------------------------------------------------------------------------------------
+Chapter-3 :- Laying the Foundation
+....................................
+
+Q1. What is Polyfill?
+Ans- When some old versions of browsers are not capable to understand the written ES6 code then we convert it into
+     a piece of code to give modern functionality to older browsers then that piece of code is known as Polyfill
+    * It is done by Babel.
+
+* npm run = npx
+ 
+
+
+Q2. What u will do to run npm in ur project ? Is there any Easy Method?
+Ans- writing command again and again npx parcel index.html, we will make changes in our package.json file that 
+     we will save "start":"parcel Index.html" to our script so that we can write command as now npx start or
+     npm run start.. we can any script so that it becomes esay to formulate. 
+
+
+
+Q3. Why do we need Keys in React in rendering the elements?
+Ans- We need keys because when we not add it then it basically changes or rerenders all the elements in vDOM that takes time 
+     if we have many childs so using key is good process.
+
+
+Q4. What is the history of Coming of JSX in picture?
+Ans- Main Motto of Facebook Developers was that we are to write html with js ,, bcz js has many functionalities u know ,,so firstly
+     they developend 
+     1.doc.gebi() and append child
+     2.React.create element() and ReactDOM.createRoot() and all but in big projects it is not handalebel so develpors u know used
+       import {createelement as cle} from "react" to make syntax small but that not make much more sense.
+     3.Now then they figure out using html and js in combination called JSX --> javascript XML nowhere mentioned this full form
+
+-------------------------------------------------------------------------------------------------------------------------
+Chapter-4 :-Show the code
+
+Q1. what is React.fragment tag?
+Ans- It is a tag that returns a bundle of Compoents without adding any extra div tag to the dom...
+    Notations can be -
+    <React.fragment> vuyvyu </React.fragment>
+           or
+    <> ygyvy </> empty tags
+
+* But remember one thing that we can't use styles in empty tags then we have to use div's
+
+
+Q2. Can we add React.fragment in React.fragment?
+Ans- Yes  we can add in different component,,but its ans will be No bcz there will never be requirement of adding
+     empty tags in empty tag.
+
+
+
+Q3. How can we add styles/css in React?
+Ans- There are 2 ways to add css in React -
+     1. inline css
+     2. External css
+
+     Inline Css --> It can be done by making a object as styles and giving the properties and using it in calls
+     
+                    Eg-- <h1 style={{backgroundColor: "lightblue"}}>Hello Style!</h1>
+
+                                    or
+                          render() {
+                        const mystyle = {
+                              color: "white",
+                             backgroundColor: "DodgerBlue",
+                                              };
+                 return (
+                     <div>
+                       <h1 style={mystyle}>Hello Style!</h1>
+
+
+     External CSS --> By using id and classname .. we can add ex..files
+                         
+                     Eg-- By simlly importing it..
+
+
+    
+
+Q4. Join items in array?
+Ans- Join is a function of array which joins every elements in a array 
+    
+    Eg--  let arr=[2,3,4,5,6]
+           console.log(arr.join(">>"));
+
+       Ans- 2>>3>>4>>5>>6
+
+  * Basically this concept is used when we works on data files and there are array in data ,then to seperate elements
+    we uses it.
+
+
+
+Q5. What is config Driven UI?
+Ans- 
+
+Q6. What is optional chaining?
+Ans- It is used to check whether the relationships between the key and value exits or not // or the key exits or
+     not in an obj ,,else it will return undefined..
+     symbol --> ?.
+   
+     Eg --> 1.human?.name?.age 
+            2. uncle.?isanimal || "Not mentioned"
+
+
+
+Q8 What is differnce between map and foreach method?
+Ans-  Slightly differences are there--
+
+    Map --> 1. Basically it transforms the array and stops till array completes. 
+            2. It returns the new arrray
+            3. functions like reduce(),filter(),and many more can be used bcz new array forms here.
+
+
+  Foreach --> 1. Baically it loops over the array and we can stop it anywhere.
+              2. It not returns any array. 
+              3. no fn can be used.
+              
+
+
+
+Q9. what is vrtual dom?
+Ans-
+
+
+
+Q10. What is reconciliation?
+Ans- Checking the differences between the diff tree and determining which parts to be changed and updating it
+     in original dom is known as reconcilization.
+
+ 
+
+Q11. What is reactfiber?
+Ans-Reactfiber is a concept that is used to faster and smoothly render the elements in react 
+  * for more info - https://www.geeksforgeeks.org/what-is-react-fiber/
+
+
+
+Q12. Why we not uses index as a key in react?
+Ans- * https://dev.to/shiv1998/why-not-to-use-index-as-key-in-react-lists-practical-example-3e66
+
+-------------------------------------------------------------------------------------------------------------------
+
+Chapter-5:- React Hooking
+..........................
+
+Q1. What is the File Structure in React?
+
+
+
+
+Q2. What is use of config file?
+Ans- Basically Now a days there is of config driven ui , where the data is passed as props in the component
+     and it shows ui according to it ,, so making whole data in one file is known as config file . and passing
+     config file over components produces cdui.
+     eg- API call or any stored data.
+
+
+
+Q3. What is named,default import / named,default Exports ?
+Ans- Imports can be of two types-
+
+    1. Named Imports --> 1. When explicitly we write export before any fn component .
+                         2. we have to keep the name same as of fn component in importing
+                         3. Named Imports can be many in a fn component.
+                         4. import {hello} from "./hello.js";
+
+   
+    2. Default Imports --> 1. When we write the default keyword before fn comp..it means this file is exporting this fn if we call/import or not
+                           2. No need to keep the name same.
+                           3. Default can only be 1 in number.
+                           4. import hello from "./hello.js";
+
+
+
+
+Q4. Why we uses "../contacts","./contacts","/contacts" in importings?
+Ans- This is a path question -
+
+   1. ../contacts --> When we have to go inside a folder we uses it.
+
+   2. ./contacts --> when we have to extract a file of same level them uses it.
+
+   3. /contacts --> for path.
+
+
+
+Q5. What is React-Hook?
+Ans- 1. Hooks are Added to React-16.8 Version/ 16.8.0 release of react..
+     2. At the End of the Day React-Hook are the normal javascript functions that after some functionality
+        returns something.
+     3. Hooks Fulfills all the neccasisities that Earlier was fulfilled by using the life-cycle-methods,constructors
+        to saves the state....
+     4. Eg- useState(), useEffect(), Useparams() , useReducer(), 
+
+     
+
+Q6. When To use React-Hooks?
+Ans- When we are defining the fn components then to maintain state and many more functionalities we should use react-hooks
+
+
+
+
+Q7. What are the Rules and Regulations of Using Hooks ?
+Ans- Basically there are some rules for using hooks--
+
+   1. Hooks are just made for fn components, don't use in classes.
+   2. Hooks can't be used in conditional,loop,switch cases,nested functions.
+  
+     
+
+
+Q8. What is React-state?
+Ans- 1. React-State is basically a plain javascript object that is used to keep records of all the local react-variables
+     2. when a state changes or variables updates then Whole Component Re-renders again.
+     3. In class-based previously constructor is used to store that state object.. U will see eg below.
+
+
+
+Q7. What is Usestate?
+Ans- 1. Usestate is a Hook that is used to maintain the state of state/local variables 
+     2. Usestate hook returns an array that contains , inital value, function to change the state of variable
+
+
+
+Q8. How react behaves with variables?
+Ans- Basically React does not support the variables handling without the state like javascript so we cant define
+     local variables without state in React..
+
+
+
+Q9. What is e.target.value?
+Ans- 1. e is the event that is happening which here is change,
+     2. target is the element that triggered the event, which here is the input, 
+     3. and value is the value of the input element
+
+
+
+------------------------------------------------------------------------------------------------------------
+Chapter:-6 Exploring the world 
+................................
+
+Q1. what is Monolith Architecture?
+Ans- 1. When all the functionalities of a project are stored in a single codebase then it is known as Monolith Architecture
+     2. In this architecture the codebase is divided in the different layers(presentation,services,persistence,Deploy) and 
+        the whole project is deployed.
+     3. Mono means single codebase. deployed at once...
+
+
+
+
+Q2. What are the advantages and disadvantages of Monolith Architecture?
+Ans- Advantages --> 1. Single project is there so easy to deploy.
+                    2. security/testing  is easy to do.
+                   
+
+
+    Disadvantages --> 1. Project becomes so big that deploying time is very high.
+                      2. Changing one line of code requires the whole project to deploy again or review again. 
+                      3. For a new-devloper it is tough to figure out the logic even if it does not know about the other code services..
+
+
+
+Q3. What is Service Oriented Architecture(SOA)?
+Ans- 1. SOA Basically divides the Monolith Architecture into Small parts and Services are Deployed Independently 
+     2. It was Evolved/Popular into Early 2000s.
+     3. In this Architecture Each services does Not Communicate Directly,, Infact there is not seperate Databases 
+        for each services.
+     4. Enterprise Service Bus(ESB) is basically used to communicate between the services 
+     5. SOA is Considerd as the SuperSet of Microservices.. beacuse in this all services communicate via ESB but in 
+        Microservices there is direct Communication between Services.
+
+
+
+
+Q4. What is Microservices?
+Ans- When the Whole Monolith structure is divided into many services so each services provides some functionalities
+     and when all services are combined using some networking protocols(http) then this architecture is known as Microservices.
+     
+    
+
+
+
+Q5. What are Advantages and Disadvantages of MicroService Architecture?
+Ans- Disadvantages --> 1. Security Issue, Many Services are there. 
+                       2. Networking Costs is additional
+                       3. Complexity Increases as new Devlopers can't easily Understand.
+
+
+     Advantages --> 1. Updation Becomes Easier.
+                    2. Easier For Reading because Every service is giving some Functionality.
+                    3. Deploy Time Decreases. 
+                    4. We Can use Different Technologies/Language for every Services.
+                    5. If there is load on any one Service then it will not affect the whole App and we need to only 
+                       Scale that service so it is known as Horizontal Scalaing.
+
+   
+    * Complete Vlog --->   https://www.geeksforgeeks.org/monolithic-vs-microservices-architecture/
+
+
+
+
+
+Q6. What is Fetch() Method ?
+Ans- 1. Javascript Method Fetch() is Used to Get the Data from the server for the URL Entered in the method..
+     2. Fetch method Can take Maximum 2 inputs and minimum one input...
+        (a). URL (Compulsory)
+        (b). Array of Properties (optional Argument)
+     3. It Returns the Promises Which Can be Resolved Or not .. Returning value can be of Format JSON/XML..returning
+        an array of objects or a single object containing URL Data.
+
+     * https://www.geeksforgeeks.org/javascript-fetch-method/
+ 
+
+
+
+Q7. What is API?
+Ans- API --> 1. Application Programming Interface.
+             2. It is an Interface that is used to Communicate Between Another apps..U can basically calls other apps
+                to come in our website/app to show the content it is basically done by this interface.
+             3. These api's basically works with REST and SOAP like commands Which follows some protocols with both
+                client and server side..
+
+   Types of API's --> 
+  .................   1. Browser API'S --> Which uses browsers feauters.        
+                      2. Third Party API'S --> Which is created by users which follows protocols.
+                      3. Geolocation API's --> Which is used to get the locations of users..
+                      4. Web Audio API's --> Which basically manages the audio part of websites..
+                      5. History API's --> Which manages history of websites ...    
+
+   * Descriptive Vlogs --> https://www.knowledgehut.com/blog/web-development/javascript-web-apis
+
+
+  
+
+
+
+Q8. What is Processdure of Rendering and Api calls ?
+Ans- 1. Whenever we call the component then with initial state our whole component gets render and there is api call 
+        also asyncronosly(in background) and remember the point that api calls always takes more time then rendering.
+
+     2. so After Api calls fetched the data from the so state changes then after api call when state changes then again
+        Whole Component gets render..
+     
+              Initial-Render --> Api Call(UseState,async)  --> Again Render
+
+                         As u know React is so Good that it will show the process of Reconcialation so u can know it
+        more while playing in Browser..
+
+
+
+
+Q9. What is dependency array ? and empty dependency array?
+Ans- 1. It is Considerd as the Second Argument(optional) in the Well-Known Hook useeffect after the callback Function. 
+     2. This Array Can Contain Stat variables, functions or empty.
+     3. Whenever there is Change in state variables or if whole component renders then every function will get the
+        new-identity so it again calls useeffect hook..
+
+     Eg-- useEffect(()=>{
+
+               anyapifn();
+                printsum();
+          },[svariable,printsum]);
+
+          so whenever component render fn will get new identity and useeffect will get call again-and-again..
+
+  # Empty Dependency Array --> Means our useffect hook is not dependent on any variable,fuction changmnets ,, it will 
+    .......................    call only once.
+
+  # Not having the second-Argument in Use-Effect is Same as Empty Dependency Array.
+
+
+
+
+
+Q10. What is CORS?
+Ans- Basically CORS is a mechanism that is used to get the data from the server...
+   
+  History --> In Earlier days Our Browser does not allow to use others api's , ports , and datas..but now a days 
+              By using some protocols we can access the data and public api's..
+
+ Procedure --> Firstly our Browser sends a Pre-Flight-Request ,to the Server ,additional HTTp's comes from server
+               (Access Control Cross Origin) so that if it gets ans yes then POST and Other commands works and we 
+               gets data..and all from server.
+
+               Almost All Browsers Uses cors mechanism for securities..
+
+      * https://www.youtube.com/watch?v=tcLW5d0KAYE&ab_channel=AkshaySaini
+      * https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+ 
+
+
+Q11. What is Async,Await?
+Ans- Async --> Using the async Keyword before any function makes it to run asynchronously (means runs in parallel) and
+               mainly the async keyword is used when the returning value is a promise , if not then javascript manually 
+               Wraps up it in Promise.
+
+    Await --> Await keyword is used when we are waiting for a resolved/rejected promise to come as a answer. 
+              without its coming our code will not go further it will wait for it to come ..
+ 
+   To Know it Better we Should Know about Prmises in Better Way ,, u can check Miscellanous Section as well.
+
+
+
+
+
+Q12. Shimaar effect of ui?
+Ans- Basically i would say it is ui devloped by cycologists in which first the prototype or ui that symolize the
+     actual ui that loads which has no data on the times of some loading as api calls ,, recently the spiining 
+     wheel was not that good experience and instantly loads the whole document....
+
+
+
+Q13. What is Expression and statement in Javascript ?
+Ans- The main Reason of using it is that -- We can only write the valid javascript expressions and javascript statements
+     inside the jsx not Everything we can write.. like we can write statement console.log() but we cant assign some values in it.
+
+    Expressions --> That produces some values or have logics
+    Statement --> Contains simple variables that has some value..
+
+
+----------------------------------------------------------------------------------------------------
+
+Chapter-7 :- Finding the path
+..............................
+
+Q1. What is Create-Browser-Router?
+
+Q2. What is useRoute-Error?
+
+Q3. What is Route-Provider?
+
+Q4. What is Outlet?
+
+Q5. What is UseParams?
+
+Q6. Use of object.values?
+
+Q7. What is configuring?
+
+Q8. Anish,can u tell us about more types of Routers?
+
+Q9. Give a Deeper Knowledge about Nested Routing?
+
+
+------------------------------------------------------------------------------------------------------
+Chapter-8 :- Let's Get Classy
+...............................
+
+Q1. What was the history Of Having Classes in React? Explain In Detail?
+
+
+Q2. What is React.Component?
+
+Q3. What is the meaning of word extends?
+
+Q4. Explain the way of expressing props,state,api calls in classes?
+
+Q5. What is Classes Life Cycle?
+
+Q6. What is ComponentDidUpdate?
+Q5. What is UseEffect?
+
+-------------------------------------------------------------------------------------------------------------------
+
+Chapter-9 :- Optimizating Our App
+....................................
+
+Q1. What is the uses of Making Our own Hooks?
+
+Q2. What is online event in javascript ?
+
+Q3. What is Lazy ?
+
+--------------------------------------------------------------------------------------------------------------------
+
+Chapter-10 :- Tailwind CSS
+............................
+
+Q1. Why we uses Different-diff Frameworks ?
+
+Q2. What is SCSS and SASS ?
+
+Q3. Can u plz tell us all the methods so that we can add css to our projects?
+
+Q3. What do You Understand by Inline-CSS in terms of Reactjs ?
+
+Q4. What are the disadvantages of using Inline-CSS in projects?
+Ans- Like - reusibiity, mantainence and all.....
+
+Q5. What is MUI ? Who Maintains it..?
+
+Q6. What are prons/cons of using libraries?
+ 
+
+Q7. What is Styled Components ? Write its cons?
+
+Q8. What is Tailwind CSS ?
+
+Q9. How to Install Tailwind CSS?and meanings of commands?
+
+Q10. What is Post css? 
+
+Q11. Explain All the Terms used in config file of tailwind css ?
+
+Q12. What is the meaning of doing Configration like .postcssrc and all ?
+
+Q13. What is Tailwind Square Bracket Notation ?
+
+Q14. What is Media Quiries?
+
+Q15. What are Cons of Tailwind CSS?
+
+ 
+
+
+--------------------------------------------------------------------------------------------------------------------
+Chapter-10 :- Data is the new oil
+....................................
+
+Q1. What is Props Drilling ?
+
+Q2. What is React Developers Tools ?
+
+Q3.  What are the Components of Frontend Part?
+
+Q4. What is Accodian ?
+
+Q5. Tell us About Profiler component in React-Dev-Tools?
+
+Q6. What is React-Context?
+
+Q7. Define Usecontext Hook?
+
+Q8. 
+
+
+----------------------------------------------------------------------------------------------------------------
+ Miscellanous Questions Of Reactjs-
+.........................................
+
+
+Q1. Explain the Promises and its Core Concept ?
+
+Q2. Explain the Asynchronus and Synchronus Javascript ?
+
+Q3. Tell us about the javascript Engine and its working ?
+
+Q4. What is difference between state and props?
+
+Q5. What is Local-Storage ?
+
+Q6. 
+
+ 
+
+
+
+
+

@@ -641,16 +641,61 @@ Q3. What is Lazy ?
 Chapter-10 :- Tailwind CSS
 ............................
 
-Q1. Why we uses Different-diff Frameworks ?
+Q1. Why we uses Different-Different Frameworks ?
+Ans- The main Aim of  Frameworks is to provide Common source/Structure  to devlopers so that do not have to redo the same code
+     Again and again and use its functionalities..
+
+    1. Easy to process(By using the Direct Functionalities)to make Projects..
+    2. Reduces the Bugs...
+    3. Using Framework Provides More Security..
+
+
 
 Q2. What is SCSS and SASS ?
+Ans-
+
+
 
 Q3. Can u plz tell us all the methods so that we can add css to our projects?
+Ans- There can be Many types of Adding css to React-projects .. some common Methods  are -
+
+    1. Inline CSS I
+    2. External CSS
+    3. SCSS/SASS
+    4. Material UI
+    5. Styled Components
+    6. Tailwind CSS
 
 Q3. What do You Understand by Inline-CSS in terms of Reactjs ?
+Ans- Using the Styles in the same file as of your components without any prebuilt class .. It is done by making the 
+     style objects and passing it as props in style={styles}...
 
-Q4. What are the disadvantages of using Inline-CSS in projects?
-Ans- Like - reusibiity, mantainence and all.....
+   Eg-- Styles={
+                 background-color:white;
+                   font-family:cursive;
+             }
+
+       <hii style={styles}/>
+
+
+   Pros--
+        1. Easy to Understand for the New Developers ,direct using the object..
+        2. After Passsing as common object with object of diff sections we can destructure it accord to Requirements
+           Which is not possible using ext.css
+   
+  Cons--
+       1. Using the Inline Css makes the code very bulky ,, handling jsx part becomes taugh.(Not Scalable)
+       2. Not reusable.
+       3. Finding Bug is Quite Tough.
+       4. Maintainence is Tough here.
+      
+
+  Conclusion -->  Using Inline css is not Considerd as the Good Approch in The large scale React Apps..
+
+
+Q4. What are pros and cons of using External Css in Reactjs Projects?
+Ans- External css --> 
+
 
 Q5. What is MUI ? Who Maintains it..?
 
@@ -714,7 +759,7 @@ Q4. What is difference between state and props?
 
 Q5. What is Local-Storage ?
 
-Q6. gg
+Q6. g
 
  
 

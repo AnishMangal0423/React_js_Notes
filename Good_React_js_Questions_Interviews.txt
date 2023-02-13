@@ -714,7 +714,7 @@ Q4. What is difference between state and props?
 
 Q5. What is Local-Storage ?
 
-Q6. 
+Q6. gg
 
  
 

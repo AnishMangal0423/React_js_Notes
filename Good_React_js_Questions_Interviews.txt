@@ -727,13 +727,32 @@ Q15. What are Cons of Tailwind CSS?
 Chapter-10 :- Data is the new oil
 ....................................
 
+Q.. What are the layers of Frontend Websites.
+
+Q.. What is Difference between State and Props?
+
+Q. 
+
+
 Q1. What is Props Drilling ?
 
 Q2. What is React Developers Tools ?
 
-Q3.  What are the Components of Frontend Part?
+Q. How to connect parent to child and child to parent in react..?
+
+
+Q3.  What are the Components of Frontend Part?  mini virtual dom.,,
 
 Q4. What is Accodian ?
+
+Q. What is FlameGraph ?
+
+Q. How the Concept of Context came into the picture?
+
+Q. Why we are not using the Local Storage instead of Contexts to store data?
+
+Q. Can we Create Global Variables to use data to all across components?
+
 
 Q5. Tell us About Profiler component in React-Dev-Tools?
 
@@ -741,7 +760,20 @@ Q6. What is React-Context?
 
 Q7. Define Usecontext Hook?
 
-Q8. 
+Q8. Howw to use Usecontext in class based components(usercontext.consumer)
+
+Q9. What is User context.provider? Tell about to cancel its default behaviour..
+
+
+Q. Is react 2 way binding..?
+
+Q.. Can u do reasearch on .....Provider?
+
+
+Q. What is the meaning of context.displayname="jhbfehbe"
+
+
+Q. can context comes inside contet/ 
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -763,7 +795,11 @@ Q6. g
 
  
 
+------------------------------------------------------------------------------------------------------------------
 
+## Important Commands and statements used here ---
+
+1. Download React Developer Tools. and use Components and Profiler..
 
 
 

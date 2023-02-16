@@ -727,18 +727,58 @@ Q15. What are Cons of Tailwind CSS?
 Chapter-10 :- Data is the new oil
 ....................................
 
-Q.. What are the layers of Frontend Websites.
+Q1. What are the layers of Frontend Websites?
+Ans- Basically Frontend is considerd to be made up of two layers-
+     1. UI Layer(operation layer).
+     2. Data Layer
+  
 
-Q.. What is Difference between State and Props?
+    UI Layer --> UI layer is considerd as the interface that is made up of react,html,css which can contain some 
+                 function/functionalities.. 
 
-Q. 
+   Data Layer --> Basically Data Layer consists of Data's , Api's , states , props and connnects our ui layer to 
+                  servers.
+
+                  States and props are also considerd as the data storagers .. 
+                  
 
 
-Q1. What is Props Drilling ?
 
-Q2. What is React Developers Tools ?
+Q2. What is Difference between State and Props?
+Ans-  Props --> 1. Props are the Properties that a Component have that can be passed to it's Childrens.
+                2. Props are used to Communicate to the Components not holds the Value.
+                3. Props Value can't be Changed or Imuttable or for Read only..
 
-Q. How to connect parent to child and child to parent in react..?
+
+     State  --> 1. States are Like the Local Variables that React Keeps the Record of them (Reconciliation
+                   Virtual Dom and all)
+                2. States are Asynchronus(Read and Write Operation)can be done.
+                3. States Basically Holds the value to the component ,, they can be passed threw props..
+                4. States are Muttable.
+   
+
+
+
+Q3. What is Props Drilling ?
+Ans- Prop Drilling is Phenomenon When we Passes Data from one component to another Interdependent Component and
+     then Another till we Reached our target Component..
+     It can Be Avoided using the React Context Api's.. 
+ 
+  * https://www.geeksforgeeks.org/what-is-prop-drilling-and-how-to-avoid-it/
+    
+
+Q4. What is React Developers Tools ?
+Ans- React Developers Tools are Simply Chrome Extensions That are Created by Facebook Developers for our open source
+     React Javascript Library. 
+     So Whenever We Downloads this Extension then we gets the Component and Profiler in our dev tools .
+
+
+Q5. How to connect parent to child and child to parent in react..?
+Ans- Parent to Child ---> We Can pass Data from Parent to child via props.. they can be any Variable,fn,state or anything else...
+
+     Child to parent ---> 
+
+
 
 
 Q3.  What are the Components of Frontend Part?  mini virtual dom.,,
@@ -773,7 +813,21 @@ Q.. Can u do reasearch on .....Provider?
 Q. What is the meaning of context.displayname="jhbfehbe"
 
 
-Q. can context comes inside contet/ 
+Q. can context comes inside contet/
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Chapter-12:- Redux 
+....................
+
+
+
+Q1. Why Companies Needs Redux?
+
+ 
 
 
 ----------------------------------------------------------------------------------------------------------------

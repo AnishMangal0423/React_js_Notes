@@ -825,9 +825,55 @@ Chapter-12:- Redux
 
 
 
-Q1. Why Companies Needs Redux?
+Q1. Why Companies Needs Redux? or Redux Came into the Picture..?(manage data properly..
 
- 
+Q2. What is the History of Redux?
+
+Q. What is the Problems and Cons of Redux?
+
+Q. Why Redux is Complicated?
+
+Q. What is Redux Store?
+
+Q. what is slices in Redux Store?
+
+Q. What is Dispatch Action and Reducer function?(update slice of Redux store) when we hit positive btn it dispatches
+    an action which calls dispatcher function then udates the cart store..
+
+Q. New Jargon --> Selector..(hook)?
+
+Q. subscribe to Store?
+
+Q. What is Configure Store ? From Where it comes?
+
+Q. Why do we need Provider in my project or components..? write its work or code..
+
+Q. Tell us about store prop?
+
+Q. What do u Understand By Create slice?
+
+Q. what is name, reducer,initial state?
+
+Q. what is state and action in our reducer function ?
+
+Q.How Redux Toolkit works in Background  Iterate over it..
+
+Q. How to inject your slice in store ?
+
+Q. When does useselector come up into picture..? from where it has came up?
+
+Q. From where deptach function came into picture?
+
+Q. 
+
+---------------------------------------------------------------------------------------------------
+
+Chapter-13 :- Testing -
+........................
+
+Q1. What is Enzyme ?
+Q2. Why to not use Enzyme 
+
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -855,5 +901,9 @@ Q6. g
 
 1. Download React Developer Tools. and use Components and Profiler..
 
+2. Injecting Redux using npm i @reduxjs/toolkit
 
+3. npm i react-redux
+
+4. redux dev tools..
 

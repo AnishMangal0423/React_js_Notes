@@ -588,7 +588,92 @@ Ans- The main Reason of using it is that -- We can only write the valid javascri
 Chapter-7 :- Finding the path
 ..............................
 
-Q1. What is Create-Browser-Router?
+Q1. Tell us Something about React-Router-Dom Library?
+Ans- 
+     1. React-Router-Dom is a npm package that enabels u to do Dynamic Routing on the web Pages.
+     2. It Allows User to Read and navigate the pages.
+     3. It is fully client and server side Routing Library.
+
+     It can have Many Components like - Router,Route,Switch,Link,children,path,..
+     
+
+
+Q2. Why we need React-Router-DOM Library in our Project ?
+Ans- Beacause our Main Purpose is to Make a single page Application ,, so if we will add anchor tags to the 
+     different components then they will refresh and erase all the local data and takes time to load 
+                                                     So to make a Single Page Application We do the Dynamic 
+     Routing that helps to switch to other pages with Local Storage data ..
+
+     - Made by Remix Developers , Discord..
+
+    * https://www.geeksforgeeks.org/what-is-react-router-dom/
+
+
+
+Q3. Tell us about Types of Routers and when which will use ?
+Ans- There can be Many types of Routers depending on the part of URL they are using-
+
+     1. Browser-Router
+     2. Memory-Router
+     3. Hash- Router
+
+     Memory-Router --> Memory Router keeps the changes in the Memory rather then user's-Browsers .. so it does
+                       not show the History for user like backward button and all ..because it does not change the
+                       url .. Good for Testing and Non-Browser Environment React-Native.
+
+
+
+     Browser-Router --> It behaves as Normal changes the url and keeps the history or reacord of previous and uses
+                        Html5 history API to keep ui sync with data.
+
+
+     Hash-Router    --> It is a client side routing that uses hash part of url 
+
+
+      * https://www.geeksforgeeks.org/reactjs-types-of-routers/
+
+
+
+
+Q4. What is Create-Browser-Router?
+Ans- 1. Create-Browser-Router is a Functionality that is Provided(imported)by React-Router-Dom Library made by Remix. 
+     2. It is mostly Browsers based routing so used in many web applications.
+     3. Important Feature is that it uses DOM History API ,, or contains History Packages to update URL and maintain 
+        History Stack.. useHistory Hook(Simple tarika) do this..
+     4. It also enables the V6.4 api's like loader,fetcher,actions..
+     5. It basically cntains an array with some objects having path and elemnts to be render..
+
+
+     Example --
+
+       import{createBrowserRouter} from "react-router-dom";
+
+            
+       let where_to_go = createBrowserRouter([
+
+                {
+                             
+
+                     path:"/",
+                     element :<home >,
+                     childrens:[.......],
+                     loader:()=>{}
+       
+            },
+        ])
+
+
+Q5. Explain All the Keys present in the CreateBrowserRouter array object ?
+Ans- Path :- It is the key given ,, it's value basically shows the path that if the given link to="" will
+              match path value then it will render that component.. 
+
+  
+     Element :- Which Component to Render When Path matches to the link url..
+  
+     Childrens :- 
+
+
+
 
 Q2. What is useRoute-Error?
 
@@ -872,7 +957,25 @@ Chapter-13 :- Testing -
 ........................
 
 Q1. What is Enzyme ?
-Q2. Why to not use Enzyme 
+Q2. Why to not use Enzyme?
+
+Q3. What is React-Testing Libraray? 
+
+Q4. Why we need Testcases? add new features not break exiting..
+
+Q. What is Test driven Development(add test cases before development)
+Q. cons of tdd
+
+Q.What are the Types of Testing ?
+
+Q. Read About JEST?
+
+Q. What is Coverage Report ?
+
+Q. What is Unit Testing ?
+
+Q. 
+
 
 
 
@@ -891,13 +994,18 @@ Q4. What is difference between state and props?
 
 Q5. What is Local-Storage ?
 
-Q6. g
+Q6. Difference between json and javascript object?
+
+Q7. 
 
  
 
 ------------------------------------------------------------------------------------------------------------------
 
 ## Important Commands and statements used here ---
+
+
+npm i react-router-dom
 
 1. Download React Developer Tools. and use Components and Profiler..
 
@@ -906,4 +1014,18 @@ Q6. g
 3. npm i react-redux
 
 4. redux dev tools..
+
+5. npm i --save-dev @testing-library/react
+
+6. npm i -D jest
+
+7. npx jest --init
+
+8. npm run test
+
+9. npm i -D jest-environment-jsdom
+
+10. Download jest-babel
+
+11. Configure it..
 

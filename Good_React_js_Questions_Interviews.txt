@@ -1027,5 +1027,5 @@ npm i react-router-dom
 
 10. Download jest-babel
 
-11. Configure it..??
+11. Configure it..?
 

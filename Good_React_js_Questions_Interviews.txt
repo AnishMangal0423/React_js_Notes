@@ -861,12 +861,13 @@ Ans- React Developers Tools are Simply Chrome Extensions That are Created by Fac
 Q5. How to connect parent to child and child to parent in react..?
 Ans- Parent to Child ---> We Can pass Data from Parent to child via props.. they can be any Variable,fn,state or anything else...
 
-     Child to parent ---> 
+     Child to parent ---> This is Possible With the Process  of Context where we store the data like a global Variable.and                   
+                          Changes according to our ease.
 
 
 
-
-Q3.  What are the Components of Frontend Part?  mini virtual dom.,,
+Q6. What is React-Virual-Dom ?
+Ans- React Virtual dom is a Programming Concept  
 
 Q4. What is Accodian ?
 

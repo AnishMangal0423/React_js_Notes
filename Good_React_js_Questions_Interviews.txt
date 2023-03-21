@@ -867,22 +867,67 @@ Ans- Parent to Child ---> We Can pass Data from Parent to child via props.. they
 
 
 Q6. What is React-Virual-Dom ?
-Ans- React Virtual dom is a Programming Concept  
+Ans- 1. React Virtual dom is same(Lightweight Copy) like the actual Dom But its Creation, Manipulation is Easy as  Compared to                             A       Actual DOM..So it Makes the Reconciallation and Diffing Easy ..  
+   
 
-Q4. What is Accodian ?
-
-Q. What is FlameGraph ?
-
-Q. How the Concept of Context came into the picture?
-
-Q. Why we are not using the Local Storage instead of Contexts to store data?
-
-Q. Can we Create Global Variables to use data to all across components?
+Q7. Explain The Process of Reconcilliaion and Diffing Algorithm?
+Ans-  Diffing Algorithm --> Basically updating/rerendering the Real Dom Again and Again using getElementByid etc..
+                            Makes a Lot of trouble and Expensive Process
+                                            So React Comes with a new Feature of virtual Dom so ReACT Makes two virtual 
+                            Dom after every changes with previous and new value so comparing the changes between the 
+                            Two dom's is Known as Diffing Process..
 
 
-Q5. Tell us About Profiler component in React-Dev-Tools?
 
-Q6. What is React-Context?
+      Reconciliation --> Now After Having Diffing Process Updating the real dom with the batches that comes from diffing       
+                         algorithm is known as Reconciliation.
+                        * From Diffing the changes comes in the form of batches to the RealDom .Batches means changes 
+                          of a certain component all together, bcz rerendering is highly expensive.
+    
+         * https://www.geeksforgeeks.org/reactjs-virtual-dom/ 
+                           
+
+
+Q8. What is FlameGraph ?
+Ans- 1. It is a React Devloper Tool that represents Rerendering tree structure  of Components for your commits.
+     2. Easy to Understand and After Clicking on it we can also get the states and props of our components.
+     3. It does not works on Global/commercial Enverionment due to data in props and state , only for developer env.
+
+
+Q9.  How the Concept of Context came into the picture?
+Ans- Earlier to change the state of parent by changing the state of child or vice versa from high levels becomes 
+     difficult because of making the global states or passing many props from many levels that creates the confusions
+     and extra cluttering the code.
+     * So Context because of Props Drilling.
+    
+
+Q10. What is React-Context?
+Ans- 1.Process of Passing the Props from c to p or p to c with the help of storing props in Store(as in Redux) so any 
+       component can use it to change its state by any level.
+
+ * https://www.geeksforgeeks.org/context-in-react/
+
+Q11. Why Context when we have Redux ?
+Ans- Understanding Redux is More complicated rather then Context so use of context is considerd as more favarouable.
+
+
+Q12. Why we are not using the Local Storage instead of Contexts to store data?
+Ans- Using Local Storage insted of Context will not a Good Idea Because-
+     1. Local Storage is Not Scaleable/Maintainable.
+     2. LocalStorage will not notify our Components on Being State Change.
+
+
+Q13. Can we Create Global Variables to use data to all across components?
+Ans- In short Form Contexts variables are considerd as the Global Variables so yeah u can do it.
+
+
+Q14. Tell us About Profiler component in React-Dev-Tools?
+Ans- It is the React Devloper Tool that is used to record the activity of all the componets that are rendering in this   
+     time period like the time to render and many more.
+     + Used for only Remote Projects.
+     + It is open source u can find it's code on github.
+
+
 
 Q7. Define Usecontext Hook?
 
